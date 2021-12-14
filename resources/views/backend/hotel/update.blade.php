@@ -11,7 +11,6 @@
 </style>
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">HOTEL UPDATE</h6>
     </div>
     <div class="card-body">
         <div class="table-responsive">
@@ -20,7 +19,16 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <tr>
                         <th>Group</th>
-                        <td><input style="width: 90%" type="text" name="group" value="{{$hotel->group}}"></td>
+                        <td>
+{{--                            <input style="width: 90%" type="text" name="group" value="{{$hotel->group}}">--}}
+                            <select name="group" id="hotel">
+                                <option value="Quản trị hệ thống">Quản trị hệ thống</option>
+                                <option value="Quản lý nhân sự">Quản lý nhân sự</option>
+                                <option value="Quản lý phòng">Quản lý phòng</option>
+                                <option value="Quản lý dịch vụ">Quản lý dịch vụ</option>
+                                <option value="Quản lý lễ tân">Quản lý lễ tân</option>
+                            </select>
+                        </td>
                     </tr>
                     <tr>
                         <th>Name</th>
@@ -41,6 +49,10 @@
                     <tr>
                         <th>Email</th>
                         <td><input style="width: 90%" type="text" name="email" value="{{$hotel->email}}"></td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td><input style="width: 90%" type="text" name="address" value="{{$hotel->address}}"></td>
                     </tr>
 
                     <tr>

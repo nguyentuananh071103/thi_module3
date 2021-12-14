@@ -30,6 +30,7 @@ class CreateHotelRequest extends FormRequest
             "phone" => "required",
             "cccd" => "required",
             "email" => "required",
+            "address" => "required",
 
         ];
     }
@@ -42,6 +43,7 @@ class CreateHotelRequest extends FormRequest
             'phone.required' => 'Số điện thoại không được để trống',
             'cccd.required' => 'CCCD không được để trống',
             'email.required' => 'Email không được để trống',
+            'address.required' => 'Địa chỉ không được để trống',
         ];
     }
 }

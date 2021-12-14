@@ -8,7 +8,6 @@ use Illuminate\Http\Request;
 
 class HotelController extends Controller
 {
-    //
     public function __construct(HotelRepository $hotelRepository)
     {
         $this->hotelRepository = $hotelRepository;

@@ -16,7 +16,7 @@ class HotelSeeder extends Seeder
     {
         //
         DB::table('hotels')->insert([
-            ["employee code"=>"1","group"=>"Quản trị hệ thống", "name"=>"Nguyễn Tuấn Anh", "sex"=>"nam", "phone"=>"0332882276", "cccd"=>"123456789", "email"=>"nguyentuananh@gmail.com"]
+            ["group"=>"Quản trị hệ thống", "name"=>"Nguyễn Tuấn Anh", "sex"=>"nam", "phone"=>"0332882276", "cccd"=>"123456789", "email"=>"nguyentuananh@gmail.com","address"=>"Phú Thọ"]
         ]);
     }
 }

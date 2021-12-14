@@ -15,7 +15,7 @@ class HotelRepository
 
     public function create($request)
     {
-        $data = $request->only('employee','group','name','sex','phone','cccd','email');
+        $data = $request->only('group','name','sex','phone','cccd','email','address');
         $hotel = Hotel::query()->create($data);
         return $hotel;
     }
@@ -36,7 +36,7 @@ class HotelRepository
     public function update($request, $id)
     {
         Hotel::query()->findOrFail($id);
-        $data = $request->only('employee','group','name','sex','phone','cccd','email');
+        $data = $request->only('group','name','sex','phone','cccd','email','address');
         return Hotel::query()->where('id', '=', $id)->update($data);
     }
     public function delete($id)

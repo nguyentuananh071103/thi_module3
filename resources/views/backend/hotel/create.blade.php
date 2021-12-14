@@ -56,6 +56,10 @@
                         <td><input style="width: 80%" name="email"></td>
                     </tr>
                     <tr>
+                        <th>Address</th>
+                        <td><input style="width: 80%" name="address"></td>
+                    </tr>
+                    <tr>
                         <a href="{{route('hotels.list')}}"><button  type="button" class="btn btn-outline-danger">Hủy</button></a>
                         <button type="submit" class="btn btn-outline-success">Thêm nhân viên</button>
                     </tr>

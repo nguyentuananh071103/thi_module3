@@ -15,13 +15,13 @@ class CreateHotelsTable extends Migration
     {
         Schema::create('hotels', function (Blueprint $table) {
             $table->id();
-            $table->string('employee code')->nullable();
             $table->string('group')->nullable();
             $table->string('name')->nullable();
             $table->string('sex')->nullable();
             $table->string('phone')->nullable();
             $table->string('cccd')->nullable();
             $table->string('email')->nullable();
+            $table->string('address')->nullable();
             $table->timestamps();
         });
     }
